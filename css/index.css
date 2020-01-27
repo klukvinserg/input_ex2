@@ -1,0 +1,153 @@
+.inputs {
+    display: flex;
+}
+
+.intact {
+    width: 150px;
+    height: 20px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.valid-text {
+    width: 150px;
+    height: 20px;
+    margin-right: 10px;
+    outline: none;
+    background-position: ;
+    background: url(../img/valid.png) no-repeat 90%;
+    background-size: 13px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 5px;
+    border: green solid 1px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: green;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 5px;
+}
+
+input:checked + .slider {
+    /* background-color: #2196F3; */
+    border: 1px solid red;
+}
+
+input:focus + .slider {
+    /* box-shadow: 0 0 1px #2196F3; */
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: red;
+}
+
+.check-boxes {
+    display: flex;
+    align-items: center;
+}
+
+.check-boxes > p {
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+.valid-text:valid {
+    border: green solid 1px;
+}
+
+.valid-text::placeholder {
+    color: green;
+}
+
+.invalid-text {
+    width: 150px;
+    height: 20px;
+    margin-right: 10px;
+    outline: none;
+    background-position: ;
+    background: url(../img/invalid.png) no-repeat 90%;
+    background-size: 13px;
+}
+
+.invalid-text:valid {
+    border: rgb(192, 50, 15) solid 1px;
+}
+
+.invalid-text::placeholder {
+    color: rgb(192, 50, 15);
+}
+
+
+
+.radio > .label-one {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 15px;
+	font-size: 13px;
+}
+
+input[type=radio] {
+	display: none;
+}
+
+.radio > .label-one:before {
+	content: "";
+	display: inline-block;
+
+	width: 16px;
+	height: 16px;
+
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background-color: white;
+	/* box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8); */
+    border-radius: 8px;
+    border: 1px solid green;
+    box-sizing: border-box;
+
+}
+
+input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: green;
+    font-size: 40px;
+    text-align: center;
+    line-height: 15px;
+}
+
