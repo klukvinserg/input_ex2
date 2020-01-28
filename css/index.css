@@ -58,12 +58,7 @@
 }
 
 input:checked + .slider {
-    /* background-color: #2196F3; */
     border: 1px solid red;
-}
-
-input:focus + .slider {
-    /* box-shadow: 0 0 1px #2196F3; */
 }
 
 input:checked + .slider:before {
@@ -109,38 +104,32 @@ input:checked + .slider:before {
     color: rgb(192, 50, 15);
 }
 
-
-
 .radio > .label-one {
-	display: inline-block;
-	cursor: pointer;
-	position: relative;
-	padding-left: 25px;
-	margin-right: 15px;
-	font-size: 13px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 13px;
 }
 
 input[type=radio] {
-	display: none;
+    display: none;
 }
 
 .radio > .label-one:before {
-	content: "";
-	display: inline-block;
-
-	width: 16px;
-	height: 16px;
-
-	margin-right: 10px;
-	position: absolute;
-	left: 0;
-	bottom: 1px;
-	background-color: white;
-	/* box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8); */
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: white;
     border-radius: 8px;
     border: 1px solid green;
     box-sizing: border-box;
-
 }
 
 input[type=radio]:checked + label:before {
@@ -151,3 +140,59 @@ input[type=radio]:checked + label:before {
     line-height: 15px;
 }
 
+.btn-group button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    outline: none;
+    background-color: rgb(147, 156, 147);
+    border-radius: 5px;
+    height: 48px;
+    margin-bottom: 10px;
+}
+
+.active:active {
+    background-color: #4CAF50;
+}
+
+.hover:hover {
+    background-color: rgb(27, 122, 30);
+}
+
+.btn-group > .danger {
+    background-color: red;
+}
+
+.btn-group > .danger-hover {
+    background-color: red;
+}
+
+.btn-group > .danger-hover:hover {
+    background-color: rgb(122, 38, 27);
+}
+
+.btn-group > .disabled {
+    background-color: rgb(87, 85, 85);
+    cursor: default;
+}
+
+.btn-group > .circle {
+    background-color: green;
+    width: 48px;
+    border-radius: 24px;
+    height: 48px;
+    padding: 0;
+}
+
+.btn-group > .circle-minus {
+    background-color: red;
+    width: 48px;
+    border-radius: 24px;
+    height: 48px;
+    padding: 0;
+}
